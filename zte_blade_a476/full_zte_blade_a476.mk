@@ -28,12 +28,13 @@ endif
 
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_MANUFACTURER := alps
+PRODUCT_MANUFACTURER := ZTE
 PRODUCT_NAME := full_zte_blade_a476
 PRODUCT_DEVICE := $(strip $(MTK_BASE_PROJECT))
-PRODUCT_MODEL := zte_blade_a476
+PRODUCT_MODEL := ZTE Blade A476
 PRODUCT_POLICY := android.policy_phone
-PRODUCT_BRAND := alps
+PRODUCT_BRAND := ZTE
+BUILD_FINGERPRINT := ZTE/ZTE_Blade_A476/ZTE_Blade_A476:5.1/LMY47D/20151127.162449:user/release-keys
 
 ifeq ($(TARGET_BUILD_VARIANT), eng)
 KERNEL_DEFCONFIG ?= zte_blade_a476_debug_defconfig
