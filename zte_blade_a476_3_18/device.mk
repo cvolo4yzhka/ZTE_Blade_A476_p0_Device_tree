@@ -163,6 +163,9 @@ $(call inherit-product-if-exists, vendor/mediatek/libs/$(MTK_TARGET_PROJECT)/dev
 #A-Go
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
+# copy bootanimation by cvolo4yzhka
+PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/system,system)
 # gapps
 $(call inherit-product, vendor/gapps/config.mk)
 # end gapps
