@@ -169,5 +169,5 @@ PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/system,system)
 
 # opengapps
-#$(call inherit-product, vendor/gapps/config.mk)
+$(call inherit-product, vendor/gapps/config.mk)
 # end opengapps
