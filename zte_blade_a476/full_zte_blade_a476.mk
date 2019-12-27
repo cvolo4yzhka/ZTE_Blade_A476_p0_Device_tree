@@ -1,6 +1,8 @@
 # Inherit from those products. Most specific first.
 #$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
+
 
 # Set target and base project for flavor build
 MTK_TARGET_PROJECT := $(subst full_,,$(TARGET_PRODUCT))
