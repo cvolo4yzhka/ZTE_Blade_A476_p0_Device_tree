@@ -119,10 +119,10 @@ PRODUCT_COPY_FILES += frameworks/av/media/libstagefright/data/media_codecs_googl
 PRODUCT_COPY_FILES += frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml
 
 # media_profiles.xml for media profile support
-PRODUCT_COPY_FILES += device/mediatek/mt6735/media_profiles_mt6735m.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml:mtk
+PRODUCT_COPY_FILES += device/mediatek/mt6735/media_profiles_mt6735p.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml:mtk
 
 # F2FS filesystem
-PRODUCT_PROPERTY_OVERRIDES += ro.vendor.mtk_f2fs_enable=1
+PRODUCT_PROPERTY_OVERRIDES += ro.vendor.mtk_f2fs_enable=0
 
 # overlay has priorities. high <-> low.
 
